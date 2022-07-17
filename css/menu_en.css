@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@400;700&family=Nothing+You+Could+Do&display=swap');
+
+
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #18110F; */
+}
+
+body {
+    font-size: 0.875em;
+    background-color: #1d1411;
+    background-color: #18110F;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER NAV */
+#nav_line2 {
+    display: block;
+}
+
+#nav_link2 {
+    color: #E0AE4F;
+}
+
+
+/* SECTION 1 */
+.sec1_body {
+    width: 100%;
+    background-color: #18110F;
+    padding-top: 10rem;
+}
+
+.s1_title_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_title {
+    font-family: 'Nothing You Could Do';
+    color: #fff;
+    font-size: 4.62em;
+    padding-bottom: 1rem;
+}
+
+
+/* SECTION 2 */
+.sec2_body {
+    width: 100%;
+    background-color: #18110F;
+    padding-top: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.s2_container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.moak_box {
+    display: flex;
+}
+
+.moak {
+    width: 8.5rem;
+    height: 2.37rem;
+    background: url("../img/moak.svg") no-repeat center center / cover;
+    background-color: #242121;
+    margin-left: 2rem;
+}
+
+.icon {
+    margin-top: 3rem;
+    width: 4.31rem;
+    height: 4.31rem;
+}
+
+#icon1 {
+    background: url("../img/menu_icon1.svg") no-repeat center center / cover;
+}
+
+#icon2 {
+    background: url("../img/menu_icon2.svg") no-repeat center center / cover;
+}
+
+#icon3 {
+    background: url("../img/menu_icon3.svg") no-repeat center center / cover;
+}
+
+#icon4 {
+    background: url("../img/menu_icon4.svg") no-repeat center center / cover;
+}
+
+#icon5 {
+    background: url("../img/menu_icon5.svg") no-repeat center center / cover;
+}
+
+#icon6 {
+    background: url("../img/menu_icon6.svg") no-repeat center center / cover;
+}
+
+#icon7 {
+    background: url("../img/menu_icon7.svg") no-repeat center center / cover;
+}
+
+#icon8 {
+    background: url("../img/menu_icon8.svg") no-repeat center center / cover;
+}
+
+.content_box {
+    padding-left: 2rem;
+    padding-top: 4rem;
+    width: 90%;
+}
+
+.content_title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.item {
+    color: #fff;
+    font-size: 1.1em;
+    white-space: nowrap;
+    margin-right: 1rem;
+}
+
+.points_line {
+    color: #D7AD76;
+    white-space: nowrap;
+    font-size: 0.5em;
+    padding-top: 0.5rem;
+    overflow: hidden;
+}
+
+.price {
+    padding: 0 0 0.25rem 1rem;
+    font-weight: 600;
+    font-size: 1.42em;
+    color: #F4BE33;
+    white-space: nowrap;
+}
+
+.s2_last_text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.28em;
+    padding: 5rem 0;
+    text-align: center;
+}

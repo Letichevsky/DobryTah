@@ -1,0 +1,158 @@
+@media screen and (max-width: 1530px) {
+    .sec1_body {
+        padding-top: 7rem;
+    }
+
+    .menu_title {
+        padding-bottom: 0;
+    }
+
+    .menu_img {
+        transform: scale(0.8);
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sec2_body {
+        box-sizing: border-box;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .s2_container {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 1230px) {
+    .s1_title_box {
+        height: 32rem;
+    }
+
+    .menu_img {
+        transform: scale(0.6);
+        margin-top: -7rem;
+    }
+
+    .s2_container {
+        /* background-color: gray; */
+    }
+
+    .icon {
+        background-color: #00aaff;
+        min-width: 4.31rem;
+    }
+
+    .content_box {
+        /* background-color: #aa00ff; */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .s1_title_box {
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .menu_img {
+        transform: scale(0.4);
+        margin-top: -13rem;
+    }
+
+    .s1_title_box {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price {
+        padding-left: 0;
+    }
+
+    .points_line {
+        margin-top: -0.7rem;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .menu_img {
+        transform: scale(0.3);
+        margin-top: -16rem;
+    }
+
+    .s1_title_box {
+        height: 20rem;
+    }
+
+    .content_box {
+        padding-left: 2rem;
+        padding-top: 4rem;
+        width: auto;
+        /* overflow: hidden; */
+    }
+
+    .points_line {
+        max-width: 72vw;
+    }
+
+    .item {
+        white-space: unset;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menu_img {
+        transform: scale(0.2);
+        margin-top: -21rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .moak {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .moak {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu_img {
+        transform: scale(0.2);
+        margin-top: -25rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .menu_img {
+        transform: scale(0.2);
+        margin-top: -33rem;
+    }
+
+    .moak {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .menu_img {
+        transform: scale(0.15);
+        margin-top: -34rem;
+    }
+}
+
+
+@media screen and (max-width: 0px) {}

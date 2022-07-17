@@ -1,0 +1,8 @@
+@media screen and (max-width: 520px) {
+    #container2 {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 1rem;
+    }
+}

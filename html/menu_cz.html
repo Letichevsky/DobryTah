@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/menu_cz.css" />
+    <link rel="stylesheet" href="../css/header_cz.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/menu_adaptation_cz.css" />
+    <link rel="stylesheet" href="../css/form_reservation_cz.css" />
+    <!-- <link rel="stylesheet" href="../css/history_adaptation_cz.css" /> -->
+    <link type="image/x-icon" href="../img/favicon.png" rel="shortcut icon" />
+    <link type="image/x-icon" href="../img/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@400;700&family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jídelní lístek</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header_box">
+        <div class="left_items">
+          <div class="logo_box">
+            <img class="logo" src="../img/logo.svg" alt="" />
+          </div>
+
+          <div class="menu_box">
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a href="./history_cz.html" id="nav_link1"> Dějiny</a>
+                  <div class="nav_line" id="nav_line1"></div>
+                </li>
+                <li>
+                  <a href="./menu_cz.html" id="nav_link2"> Jídelní lístek</a>
+                  <div class="nav_line" id="nav_line2"></div>
+                </li>
+                <li>
+                  <a href="./contact_cz.html" id="nav_link3"> Kontakt</a>
+                  <div class="nav_line" id="nav_line3"></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="right_items">
+          <div class="tel_box">
+            <a class="tel" href="tel:+420776076583">+420 776 076 583</a>
+          </div>
+
+          <div class="button_box">
+            <button class="btn_reserv">
+              <div class="reserv_text">Rezervonat</div>
+              <div class="reserv_arrow"></div>
+            </button>
+          </div>
+
+          <div class="lang_box">
+            <div class="cz"></div>
+            <div class="separ">|</div>
+            <div class="en"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BURGER MENU BODY -->
+      <div class="burger_menu_section">
+        <div class="burger_menu_body">
+          <div class="burger_menu_content">
+            <div class="bm_sec1_nav">
+              <nav class="bm_nav_body">
+                <ul>
+                  <li><a href="./history_cz.html"> Dějiny</a></li>
+                  <li><a href="./menu_cz.html"> Jídelní lístek</a></li>
+                  <li><a href="./contact_cz.html"> Kontakt</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="bm_sec3_tel">
+              <div class="bm_tel_box">
+                <a href="tel:+420776076583">+420776076583</a>
+                <div class="bm_lang_box">
+                  <div class="cz" id="f_cz"></div>
+                  <div class="separ">|</div>
+                  <div class="en" id="f_en"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bm_button_box">
+          <div class="bm_button_btn">
+            <div class="bm_button_btn_text">Rezervonat</div>
+            <div class="bm_button_btn_arrow"></div>
+          </div>
+        </div>
+        <div class="closed_section"></div>
+      </div>
+
+      <div class="burger_body">
+        <div class="burger_box">
+          <div class="burger_line1"></div>
+          <div class="burger_line2"></div>
+          <div class="burger_line3"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section class="section" id="section1">
+      <div class="sec1_body">
+        <div class="s1_title_box">
+          <h2 class="menu_title" data-aos="fade-left" data-aos-delay="50">
+            Jídelní lístek
+          </h2>
+          <img
+            src="../img/menu_img.png"
+            alt=""
+            class="menu_img"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="3000"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section" id="section2">
+      <div class="sec2_body">
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon1"></div>
+          <div class="content_box">
+            <div class="moak_box">
+              <h3 class="content_title">Káva evropská</h3>
+              <div class="moak"></div>
+            </div>
+
+            <div class="content">
+              <p class="item">Espresso</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">45 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Cappuccino</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">55 Kč</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon2"></div>
+          <div class="content_box">
+            <h3 class="content_title">Kava východnÍ - syrská s kardamomem</h3>
+            <div class="content">
+              <p class="item">Malá dŽezva (2 ŠáleČky)</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">75 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Velká dŽezva (4 ŠáleČky)</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">135 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Velká dŽezva nа sudánskÝ zpŮsob s mlèkem pŘipravená (4 ŠáleČky)
+              </p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">145 Kč</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon3"></div>
+          <div class="content_box">
+            <h3 class="content_title">Čaje východnÍ</h3>
+            <div class="content">
+              <p class="item">Earl Grey ceylonský</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">65 Kč (400 ml)/ 115 Kč (1l)</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj turecký</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">70 Kč (400 ml)/ 120 Kč (1l)</p>
+            </div>
+            <div class="content">
+              <p class="item">Touareg marocký</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">70 Kč (400 ml)/120 Kč (1l)</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj ledový Earl Grey</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">70 Kč (400 ml)/145 Kč (1l)</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj ledový z touaregu marockèho</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">70 Kč (400 ml)/145 Kč (1l)</p>
+            </div>
+            <div class="content">
+              <p class="item">ledový z jasmÍnu ČÍnskeho</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">75 Kč (400 ml)/145 Kč (1l)</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon4"></div>
+          <div class="content_box">
+            <h3 class="content_title">Čaje asijskÉ do konviČky 150ml</h3>
+            <div class="content">
+              <p class="item">Čaj černý z Darjeelingu</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj puerh z Číny tmavý</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">aj puerh z Číny tmavý</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj Gou Oing z Číny zelený</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj zelený jasmínovým květem ovoněný</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Čaj oolong mléčný ze zahrady tchajwanské Nan Tou
+              </p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">119 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Čaj oolong z Tchajwanu s výtažkem z kořene ženšenového
+              </p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">119 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj vysokohorský archivní A Li Shan</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">Čaj oolong zimní Four Scasons z Tchajwanu 95</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">95 Kč</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Čaj oolong Wen Shan Bao Zhong stříbrnou medailí oceněný
+              </p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">119 Kč</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon5"></div>
+          <div class="content_box">
+            <h3 class="content_title">Nápoje nealkoholické</h3>
+            <div class="content">
+              <p class="item">Mattoni voda pramenitá karlovarská</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">85 Kč (330 ml)</p>
+            </div>
+            <div class="content">
+              <p class="item">Limonády siciliske</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">55 Kč (275 ml)</p>
+            </div>
+            <div class="content">
+              <p class="item">Kola královská kurunni</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">45 Kč (250 ml)</p>
+            </div>
+            <div class="content">
+              <p class="item">Limonády domácÍ</p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">75 Kč (400 ml)/135 Kč (1l)</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon6"></div>
+          <div class="content_box">
+            <h3 class="content_title">LahŮdky Východní</h3>
+            <div class="content">
+              <p class="item">Baklava turecká pistáciová zelená šťavnatá</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">50 Kč (1 ks)/50 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Baklava turecká burma s ořechy vlašskými</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">50 Kč (1 ks)/135 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Baklava syrská hnízdečko bohaté kešu</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">55 Kč (1 ks)/155 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Baklava syrská balorija bohatá pistáciemi</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">60 Kč (1 ks)/165 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Baklava turecká mušle bohatá pistáciemi</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">60 Kč (1 ks)/165 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Datle medžůl palestinské velikánské</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">25 Kč (1 ks)/70 Kč (3 ks)</p>
+            </div>
+            <div class="content">
+              <p class="item">Oříšky pistácie syrské čerstvé</p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">100 Kč (40g)</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Hummus s paprikou pálivou, olejem olivovým damascénským <br />
+                pita chlebem čerstvým
+              </p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">140 Kč (100g)</p>
+            </div>
+            <div class="content">
+              <p class="item">
+                Hummus s paprikou sladkou, olejem olivovým damascénským <br />
+                s pita chlebem čerstvým
+              </p>
+              <div class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </div>
+              <p class="price">140 Kč (100g)</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon7"></div>
+          <div class="content_box">
+            <h3 class="content_title">“Dobré Taho”</h3>
+            <div class="content">
+              <p class="item">
+                Pita arabská šunkou kuřecí a cheddarem nizozemským <br />
+                plněná, s okurkou arabskou nakládanou, hummusem
+              </p>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">165 Kč</p>
+            </div>
+          </div>
+        </div>
+        <div class="s2_container" data-aos="fade-left" data-aos-delay="50">
+          <div class="icon" id="icon8"></div>
+          <div class="content_box">
+            <!-- <h3 class="content_title">Dýmka vodní</h3> -->
+            <div class="content">
+              <!-- <p class="item"><strong>Dýmka vodní</strong></p> -->
+              <h3
+                style="
+                  white-space: nowrap;
+                  padding-right: 2rem;
+                  margin-top: -0.5rem;
+                "
+                class="content_title"
+              >
+                Dýmka vodní
+              </h3>
+              <p class="points_line">
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+              </p>
+              <p class="price">75 Kč</p>
+            </div>
+          </div>
+        </div>
+        <p class="s2_last_text">
+          * PInformace o alergenech v pokrmech obsažených poskytne laskavě
+          obsluha na vyžádání zákazníka
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM RESERVATION -->
+    <div class="the_form">
+      <div class="form_black_bg"></div>
+
+      <form action="sendmail.php" method="POST" class="form" id="form">
+        <div class="form_body">
+          <div class="form_left_half">
+            <h3>Udělejte si rezervaci</h3>
+            <label for="name">NÁZEV *</label>
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Napište prosím své jméno"
+              required
+            />
+            <label for="email">E-MAILEM *</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Napište prosím svůj email"
+            />
+            <label for="date">PODROBNOSTI O REZERVACI</label>
+            <p>Datum *</p>
+
+            <div class="date_box">
+              <input type="datetime-local" name="date" id="date" />
+              <p>Časový interval</p>
+              <div class="radio_box">
+                <input
+                  checked
+                  type="radio"
+                  name="time"
+                  id="main-time"
+                  value="1"
+                  class="input_radio"
+                />
+                <label for="main-time" class="time_label"
+                  ><span>Dvě hodiny</span></label
+                >
+              </div>
+
+              <div class="radio_box">
+                <input
+                  type="radio"
+                  name="time"
+                  id="other-time"
+                  value="2"
+                  class="input_radio"
+                  required
+                />
+                <label for="other-time" class="time_label"
+                  ><span>Jiný</span></label
+                >
+              </div>
+            </div>
+
+            <label for="table">Umístění stolu</label>
+            <select name="table-list" id="table">
+              <option id="table1" value="1" selected>Gauč pro 2</option>
+              <option id="table2" value="2">Gauč pro 4</option>
+              <option id="table7" value="7">U okna pro 2</option>
+              <option id="table3" value="3">U okna pro 4</option>
+              <option id="table4" value="4">Marocký pro 2</option>
+              <option id="table5" value="5">Uprostřed pro 4</option>
+              <option id="table6" value="6">Uprostřed pro 6</option>
+              <option id="table8" value="8">Pod vitráží pro 2</option>
+            </select>
+            <div class="guests_box">
+              <p class="guests_title">Počet hostů:</p>
+              <div class="calculator_body">
+                <div class="cal_button" id="cal_button_minus">-</div>
+                <div class="cal_display">
+                  <p class="cal_display_text" name="guests">1</p>
+                  <!-- <button class="cal_button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number"
+                  min="1"
+                  max="10" class="cal_display_text" name="guests" id="guests" value="1" readonly></input>
+                  <button class="cal_button" type="button" onclick="this.previousElementSibling.stepUp()">+</button> -->
+                </div>
+                <div class="cal_button" id="cal_button_plus">+</div>
+              </div>
+            </div>
+            <button type="submit" class="btn_submit" id="submit_btn">
+              Rezervujte nyní
+            </button>
+          </div>
+          <div class="form_right_half">
+            <img src="/img/table1.png" alt="" class="table_img" />
+            <div class="table_img_title">Gauč pro 2</div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- FORM THANKS -->
+    <div class="form_thanks_body">
+      <div class="img_for_tablet_box"></div>
+      <h3>Děkuji za rezervaci</h3>
+      <h4>Podrobnosti o objednávkách:</h4>
+      <p class="userInfo" name="userInfo" id="userInfo"></p>
+      <button src="/index.html" class="thanks_btn">
+        Jít na domovskou stránku
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="footer_body">
+        <div class="f_sec1">
+          <div class="f_box" id="f_box1">
+            <img class="logo" src="../img/logo.svg" alt="" id="logo_footer" />
+          </div>
+
+          <div class="f_box" id="f_box1_tablet">
+            <img class="logo" src="../img/logo.svg" alt="" id="logo_footer" />
+
+            <div class="f_social_box">
+              <div class="f_social_icon" id="f_social_icon_fb"></div>
+              <div class="f_social_icon" id="f_social_icon_twitter"></div>
+              <div class="f_social_icon" id="f_social_icon_instagram"></div>
+            </div>
+          </div>
+
+          <div class="f_box" id="f_box2">
+            <h4 class="f_box2_title">Kavárna Dobrý Tah</h4>
+            <a href="tel:+420776076583" class="f_box2_text" id="f_tel"
+              >+420 776 076 583</a
+            >
+            <a href="mailto:rezervace@gmail.com" class="f_box2_text" id="f_mail"
+              >rezervace@gmail.com</a
+            >
+            <p id="f_box2_address" class="f_box2_text">
+              Neklanova 150/38, Praha<br />128 00 Česká republika
+            </p>
+          </div>
+          <div class="f_box" id="f_box3">
+            <nav class="f_nav">
+              <ul class="f_nav_body">
+                <li>
+                  <a href="./history_cz.html" class="f_nav_link">Dějiny</a>
+                </li>
+                <li>
+                  <a href="./menu_cz.html" class="f_nav_link">Jídelní lístek</a>
+                </li>
+                <li>
+                  <a href="./contact_cz.html" class="f_nav_link">Kontakt</a>
+                </li>
+                <li><p class="f_nav_link" id="f_link_reserv">Rezervace</p></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="f_box" id="f_box4">
+            <div class="f_social_box">
+              <div class="f_social_icon" id="f_social_icon_fb"></div>
+              <div class="f_social_icon" id="f_social_icon_twitter"></div>
+              <div class="f_social_icon" id="f_social_icon_instagram"></div>
+            </div>
+          </div>
+        </div>
+        <div class="f_sec2">
+          <h4 class="f_last_text">
+            Autorská práva © 2022. Všechna práva vyhrazena.
+          </h4>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/header_footer_cz.js"></script>
+    <script src="../js/reservation_cz.js"></script>
+    <script src="../js/menu_cz.js"></script>
+  </body>
+</html>
